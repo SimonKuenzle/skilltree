@@ -3,24 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Skills - Simon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+          integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <section>
 <pre class="mermaid">
         mindmap
-  root((My Skills))
-    id[Languages]
-        id(Java)
-        ::icon(fa fa-coffee)
-            id(Groovy)
-        id(JavaScript)
+root((My Skills))
+  id)Legend(
+    ::icon(fa fa-lightbulb)
+    id[Category]
+      id(Skill with experience)
+      id{{Skill with interest or little experience}}
+      id))Knowledge gap((
+  id[Languages]
+    ::icon(fa fa-comments)
+    id(Java)
+      ::icon(fa fa-coffee)
+      id(Groovy)
+      id))Kotlin((
+    id(JavaScript)
+      id{{TypeScript}}
+    id(SQL)
+      id{{PL/SQL}}
+    id{{C#}}
+    id{{C}}
+    id{{Prolog}}
+    id{{Python}}
+  id[Web Development]
+    id[Web Technologies]
+      id(HTML)
+      id(CSS)
+        id{{SASS}}
+      id(Web Components)
+    id[Frameworks]
+      id{{Angular}}
+      id(React)
+        id{{Next.js}}
+        id))Redux((
+      id(Spring)
+        id(Spring Boot)
+          id(Spring Security)
+          id(Spring Actuator)
+          id(Hibernate)
+        id(Grails 2)
+        if(gradle)
+        if(maven)
+    id[API]
+      ::icon(fa fa-door-open)
+      id[synchronous]
+        id(RESTful)
+          id(OpenAPI)
+          id{{OData}}
+          id{{HATEOAS}}
+        id))GraphQL((
+        id))Soap((
+      id[asynchronous]
+        id{{Apache Kafka}}
+          id{{Event Sourcing}}
+        id{{NATS}}
+  id[Architecture]
+    id{{Distributed Systems}}
+      id(Microservices)
+        id(Migration from Monolith)
+      id{{SOA}}
+    id(DDD)
+  id[IoT]
+    id(Microcontroller)
+      id(Arduino)
+      id{{Raspberry Pi}}
+    id(Sensors)
+    id{{BLE}}
+  id[Testing]
+    id(Unit Testing)
+      id(JUnit)
+        id(Spock)
+      id(Mockito)
+      id{{Jasmine}}
+    id(Integration Testing)
+    id{{End-to-End Testing}}
+    id(GUI Testing)
+      id(geb)
+      id{{Selenium}}
+  id[Infrastructure]
+    id[Virtualization]
+      id[Cloud]
+        ::icon(fa fa-cloud)
+        id))public cloud((
+          id{{Azure}}
+        id{{private cloud}}
+          id(Docker)
+            id{{Compose}}
+            id{{Kubernetes}}
+            id{{Nomad}}
+      id))Terraform((
+    id[DevOps]
+      id[CI/CD]
+        id(Jenkins)
+        id(Pipelines)
+        id{{Gitlab CI/CD}}
+        id{{Github Actions}}
+    id[Maintenance]
+      id(Graylog)
+         id{{Prometheus}}
+      id(Grafana)
+  id[Data Science]
+    id))AI((
+    ::icon(fa fa-robot)
+    id))ML((
+    id[Big Data]
+      id{{ETL}}
   </pre>
 </section>
 <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({startOnLoad: true ,theme: 'forest'});
+    mermaid.initialize({startOnLoad: true, theme: 'forest'});
 </script>
 </body>
 </html>

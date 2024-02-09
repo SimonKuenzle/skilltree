@@ -1,14 +1,26 @@
-section > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+section {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background-color: rgba(236, 224, 207, 0.61);
+
+    pre.mermaid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        svg {
+            max-height: 100vh;
+            max-width: 100vw;
+        }
+    }
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
